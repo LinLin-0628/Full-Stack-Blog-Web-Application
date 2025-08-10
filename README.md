@@ -2,12 +2,11 @@
 
 A full-featured blog web application built with Django, featuring user authentication, content management, and interactive commenting system.
 
-## 🚀 Features
+## Features
 
 ### Core Functionality
 - **User Authentication**: Registration, login/logout with email verification
 - **Blog Management**: Create, read, and categorize blog posts
-- **Rich Text Editor**: Integrated WangEditor for content creation
 - **Commenting System**: Interactive commenting on blog posts
 - **Search Functionality**: Search through blog titles and content
 - **Email Verification**: SMTP-based captcha system for secure registration
@@ -15,7 +14,7 @@ A full-featured blog web application built with Django, featuring user authentic
 
 
 
-## 🔧 Installation & Setup
+## Installation
 
 ### 1. Clone the Repository
 ```bash
