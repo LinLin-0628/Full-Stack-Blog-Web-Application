@@ -1,0 +1,41 @@
+{% extends "blog/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+
+{% block main %}
+    <h1>All Blogs</h1>
+    <div class="row row-cols-2 row-gap-4">
+
+        {% for blog in blogs %}
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <a href="{% url 'blog:blog_detail' blog.id %}">{{ blog.title }}</a>
+                </div>
+                <div class="card-body" style="height: 120px">
+                    <p class="card-text">{{ blog.content|striptags|truncatechars:200 }}</p>
+                </div>
+
+                <div class="card-footer text-body-secondary d-flex justify-content-between">
+                    <div>
+                        <img src="{% static 'image/avatar.webp' %}" alt="" class="rounded-circle" style="width: 30px; height: 30px">
+                        {{ blog.author.username }}
+                    </div>
+                    <div>
+                        Posted at: {{ blog.created_time|date:"d-m-Y h:i A" }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+
+
+    </div>
+{% endblock %}
