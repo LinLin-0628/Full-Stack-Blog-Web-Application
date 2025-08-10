@@ -19,8 +19,8 @@ A full-featured blog web application built with Django, featuring user authentic
 
 ### 1. Clone the Repository
 ```bash
-git clone 
-cd BiliBili-Django-Tutorial
+git clone https://github.com/LinLin-0628/Full-Stack-Blog-Web-Application.git
+cd Full-Stack-Blog-Web-Application
 ```
 
 ### 2. Set Up Virtual Environment
